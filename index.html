@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonCue</title>
+    
+    <style type="text/css">
+        @font-face {
+            font-family: "Open_Sans_base";
+            src: url("./font/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+            font-weight: 600;
+            font-style: normal;
+        }
+    </style>
+
+    <style type="text/css">
+        @font-face {
+            font-family: "Open_Sans_bold";
+            src: url("./font/Open_Sans/static/OpenSans-Bold.ttf");
+            font-weight: 800;
+            font-style: normal;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/added.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="./images/logo.png" style="fill:white">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="./js/video_comparision.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+<!--<header class="header">-->
+<!--    <a href="#" class="logo"><img src="./images/logo.png" style="width: 10%;height: 10%" alt=""></a>-->
+<!--    <div class="fas fa-bars"></div>-->
+<!--        <nav class="navbar">-->
+<!--        <ul>-->
+<!--            <li><a style="font-family: 'Open_Sans_bold';" href="#home">NeonCue</a></li>-->
+<!--            <li><a style="font-family: 'Open_Sans_bold';" href="#about">About</a></li>-->
+<!--            <li><a style="font-family: 'Open_Sans_bold';" href="#Demo">Demo</a></li>-->
+<!--            <li><a style="font-family: 'Open_Sans_bold';" href="#people">People</a></li>-->
+<!--            <li><a style="font-family: 'Open_Sans_bold';" href="#history">History</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header>-->
+
+
+
+<header class="header">
+    <a href="#" class="logo"><img src="./images/logo.png" style="width: 5%;height: 5%" alt=""></a>
+    <div class="fas fa-bars nav-toggle"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a style="font-family: 'Open_Sans_bold';" href="#home">NeonCue</a></li>
+            <li><a style="font-family: 'Open_Sans_bold';" href="#about">About</a></li>
+            <li><a style="font-family: 'Open_Sans_bold';" href="#Demo">Demo</a></li>
+            <li><a style="font-family: 'Open_Sans_bold';" href="#people">People</a></li>
+            <li><a style="font-family: 'Open_Sans_bold';" href="#history">History</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+<section id="home" class="home">
+    <h1 style="font-family: 'Open_Sans_base';">NeonCue</h1>
+    <h2 style="font-family: 'Open_Sans_base';">Smaller in Size, Better in Quality</h2>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+</section>
+
+<section id="about" class="about">
+    <h1 class="heading" style="font-family: 'Open_Sans_bold';">About Us</h1>
+    <div class="row">
+        <div class="content">
+            <p style="font-family: 'Open_Sans_bold';">We offer a codec-agnostic solution that optimizes video compression rates, <br>enabling businesses to reduce costs while ensuring a premium content experience<br> for customers with minimal bandwidth usage </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="section-head-1" style="text-align: center; background-color: rgb(255, 255, 255);" >
+    <h4 class="heading" style="font-family: 'Open_Sans_bold';" id="Demo">Demo</h4>
+    <!-- 추가  -->
+    <div class="testimonial-item row align-items-center">
+        <div class="video-grid-container">
+            <div class="video-compare-container" id="materialsDiv">
+                <video  class="video" id="materials1" loop="" playsinline="" autoplay="" muted="" src="./videos2/Cyberpunk01_1920x1080.mp4" onplay="resizeAndPlay(this, 'Video Game')"></video>
+                <canvas class="videoMerge" id="materials1Merge" ></canvas>
+            </div>
+
+
+            <div class="video-compare-container" id="materialsDiv">
+                <video  class="video" id="materials2" loop="" playsinline="" autoplay="" muted="" src="./videos2/NewJeansAttention_1920x1080.mp4" onplay="resizeAndPlay(this, 'Music Video')"></video>
+                <canvas class="videoMerge" id="materials2Merge" ></canvas>
+            </div>
+
+            <div class="video-compare-container" id="materialsDiv">
+                <video  class="video" id="materials3" loop="" playsinline="" autoplay="" muted="" src="./videos2/videoSRC24_1280x720.mp4" onplay="resizeAndPlay(this, 'Animation')"></video>
+                <canvas class="videoMerge" id="materials3Merge" ></canvas>
+            </div>
+
+            <div class="video-compare-container" id="materialsDiv">
+                <video  class="video" id="materials4" loop="" playsinline="" autoplay="" muted="" src="./videos2/BluePlanet205_1920x1080.mp4" onplay="resizeAndPlay(this, 'TV Show')"></video>
+                <canvas class="videoMerge" id="materials4Merge" ></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--            problem 시작-->
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="section-head col-sm-12">
+                    <h1>Problem</h1>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+
+                        <img style="width: 35%; " src="./images/Chart.png" alt="CEO">
+
+
+                        <h6 style="font-size: 200%">SURGE IN ONLINE VIDEO CONSUMPTION</h6>
+                        <p>The growing demand for online video content has led to network congestion issues</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+
+                        <img style="width: 35%; " src="./images/blink.png" alt="CTO">
+                        <h6 style="font-size: 200%">CUSTOMER SATISFACTION</h6>
+                        <p>
+                            Users often experience degraded video quality,
+                            resulting in pixelation and buffering, which leads to
+                            user frustration and dissatisfaction
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <img style="width: 35%; " src="./images/Cost.png" alt="EA">
+                        <h6 style="font-size: 200%">HIGH STORAGE COSTS</h6>
+                        <p>
+                            Service providers are grappling with the ever-increasing volume
+                            of video data. They are burdened by rising expenses for cloud
+                            storage or substantial investments in storage infrastructure.
+                        </p>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--            solution 시작-->
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="section-head col-sm-12">
+                    <h1>Solution</h1>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <img style="width: 35%; " src="./images/Brain.png" alt="CEO">
+
+                        <h6 style="font-size: 200%">AI-BASED VIDEO PROCESSING</h6>
+                        <p>
+                            We employ our proprietary AI technology to process video signals
+                            before and after conventional video codecs for better compression
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <img style="width: 35%; " src="./images/Wheel.png" alt="CTO">
+                        <h6 style="font-size: 200%">OPTIMIZE VIDEO COMPRESSION</h6>
+                        <p>
+                            The content- and context- aware solution maximizes video compression rates,
+                            significantly reducing size up to 50% while maintaining the video quality
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <img style="width: 35%; " src="./images/Arrow.png" alt="EA">
+                        <h6 style="font-size: 200%">CODEC-AGNOSTIC</h6>
+                        <p>
+                            The solution works with conventional video codecs in an interoperable manner.
+                            This approach enables our solution can be adopted in broad services
+                        </p>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--solution 끝-->
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <p>NeonCue software achieves a <b>47% BD-rate</b> saving over the HEVC codec.   </p>
+
+
+</div>
+
+
+
+<div class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="section-head col-sm-12" id="people">
+                <h1>People</h1>
+<!--                <p>Our company's CEO and CTO each run laboratories consisting of a total of 50 master's and doctoral researchers, with 27 and 23 members respectively.-->
+<!--                <p>In collaboration with the Yonsei University Industry-Academic Cooperation Foundation and its technology holding company, we are engaged in various partnerships and project executions.-->
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <!--          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></Fi></span>-->
+                <div class="item">
+<!--                <span class="icon feature_box_col_one">-->
+                    <img style="width: 35%; " src="./images/CEO_NoBackground.png" alt="CEO">
+<!--                </span>-->
+
+                    <h6 style="font-size: 200%"><br>Sangyoun Lee <br><span style="font-size: 80%">Prof @ Yonsei University </span></h6>
+                    <br>
+                    <h5 style="color:#5a6268;font-size:150%;margin-top: -20px; ">CEO</h5>
+<!--                    <h5>연세대학교 전기전자공학부 정교수</h5>-->
+<!--                    <h5>영상 및 비디오 패턴 인식 연구실</h5>-->
+                    <div class="heading-with-line">
+                        <span>Education</span>
+                    </div>
+
+                    <p class="leadersP"><span class="degree-icon2">B.S.</span><br> Electronic Engineering, Yonsei University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">M.S.</span><br> Electronic Engineering, Yonsei University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">Ph.D.</span><br> Georgia Institute of Technology, Atlanta, GA, USA</p>
+                    <!--                <p><span class="degree-icon">B.S.</span>Electronic Engineering, Yonsei University, Seoul, Korea</p>-->
+                    <!--                <p><span class="degree-icon">M.S.</span>Electronic Engineering, Yonsei University, Seoul, Korea</p>-->
+                    <!--                <p><span class="degree-icon">Ph.D.</span>Georgia Institute of Technology, Atlanta, GA, USA</p>-->
+                    <div class="heading-with-line">
+                        <span>Careers</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">2004 ~ Present</span><br> Professor, Yonsei University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">1989 ~ 2004</span><br> Senior Research Engineer, Korea Telecom</p>
+                    <div class="heading-with-line">
+                        <span>Award</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">2020</span><br> 2020 Yonsei University Outstanding Achievement Award in Research Excellence</p>
+                    <p class="leadersP"><span class="degree-icon2">2014 ~ 2019</span><br> Yonsei University Outstanding Research Professor Award: 2014, 2016, 2018, 2019</p>
+                    <p class="leadersP"><span class="degree-icon2">2011</span><br> Recognized as one of the top 50 professors for contributing to research funding at Yonsei University</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="item">
+<!--              <span class="icon feature_box_col_two">-->
+                <img style="width: 35%; " src="./images/CTO_NoBackground.png" alt="CTO">
+<!--              </span>-->
+                    <h6 style="font-size: 200%"><br>Hong-Goo Kang<br><span style="font-size: 80%">Prof @ Yonsei University</span></h6>
+<!--                    <p style="color:#5a6268;font-size:150% ">CTO</p>-->
+                    <br>
+                    <h5 style="color:#5a6268;font-size:150%;margin-top: -20px; ">CTO</h5>
+
+                    <div class="heading-with-line">
+                        <span>Education</span>
+                    </div>
+
+                    <p class="leadersP"><span class="degree-icon2">B.S.</span><br> Electronic Engineering, Yonsei University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">M.S.</span><br> Electronic Engineering, Yonsei University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">Ph.D.</span><br> Electronic Engineering, Yonsei University, Seoul, Korea</p>
+                    <!--                <p><span class="degree-icon">B.S.</span>Electronic Engineering, Yonsei University, Seoul, Korea</p>-->
+                    <!--                <p><span class="degree-icon">M.S.</span>Electronic Engineering, Yonsei University, Seoul, Korea</p>-->
+                    <!--                <p><span class="degree-icon">Ph.D.</span>Georgia Institute of Technology, Atlanta, GA, USA</p>-->
+                    <div class="heading-with-line">
+                        <span>Careers</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">2002 ~ Present</span><br> Professor, Yonsei University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">2015 ~ 2016</span><br> Visiting Scientist, Google Inc., Mountain View, CA, USA</p>
+                    <p class="leadersP"><span class="degree-icon2">2008 ~ 2009</span><br> Senior Principal Scientist, Broadcom, Irvine, CA, USA</p>
+                    <p class="leadersP"><span class="degree-icon2">1996 ~ 2002</span><br> Senior Technical Staff Member, AT&T Labs-Research</p>
+                    <div class="heading-with-line">
+                        <span>Award</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">2020</span><br> Interspeech Best paper award</p>
+                    <p class="leadersP"><span class="degree-icon2">2013</span><br> Korean Acoustical Society Excellent Paper Award.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="item">
+<!--              <span class="icon feature_box_col_three">-->
+                  <img style="width: 35%; " src="./images/COO_NoBackground.png" alt="EA">
+<!--              </span>-->
+                    <h6 style="font-size: 200%"><br>Yongje Kim<br><span style="font-size: 80%">ex)E.V.P of Samsung Electronics</span></h6>
+                    <br>
+                    <h5 style="color:#5a6268;font-size:150%;margin-top: -20px; ">COO</h5>
+
+                    <div class="heading-with-line">
+                        <span>Education</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">B.S.</span><br> Electronic Engineering, Sogang University, Seoul, Korea</p>
+                    <p class="leadersP"><span class="degree-icon2">M.S.</span><br> Electronic Engineering, Ajou University, Suwon, Korea</p>
+                    <div class="heading-with-line">
+                        <span>Careers</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">1984 ~ 2022</span><br> Samsung Electronics</p>
+                    <p class="leadersP"><span class="degree-icon2">2018 ~ 2020</span><br> Executive Vice President and Head of Service Commercialization at Samsung Electronics Mobile Business Division</p>
+                    <p class="leadersP"><span class="degree-icon2">2016 ~ 2017</span><br> President of Samsung Research America</p>
+                    <p class="leadersP"><span class="degree-icon2">2011 ~ 2014</span><br> Executive Vice President and Research Team Leader at Samsung Electronics DMC Research Center</p>
+                    <p class="leadersP"><span class="degree-icon2">2005 ~ 2010</span><br> Executive Research Team Leader at Samsung Electronics Digital Media (DM) Research Center Award</p>
+                    <div class="heading-with-line">
+                        <span>Award</span>
+                    </div>
+                    <p class="leadersP"><span class="degree-icon2">2014</span><br> Listed in Marquis Who’s Who</p>
+                    <p class="leadersP"><span class="degree-icon2">2007 ~ 2010</span><br>  Jang Young Shil Award: 2007, 2009, 2010</p>
+                    <p class="leadersP"><span class="degree-icon2">2005 ~ 2010</span><br> Samsung Proud People Award, Technical Grand Prize & Main Prize: 2005, 2010</p>
+                    <p class="leadersP"><span class="degree-icon2">2004</span><br> Grand Prize in Multimedia Technology by The Minister Of Information and Communication of The Republic of Korea</p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+<div class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="section-head-1 col-sm-12" style="text-align: center;">
+                <h4 style="margin-top: -5rem;" id="history"><span>Our</span> History</h4>
+
+<!--                <p>The objective of IT Company is to enable a large number of youth to take up <br>industry-relevant skill training that will help them<br> in securing a better livelihood.-->
+                </p>
+            </div>
+
+
+
+            <div class="timeline">
+                <div class="timeline-item" data-date="2021.01">
+                    <h1>2021.01</h1>
+                    <h3>- Establishment of AIonFlow Co., Ltd. </h3>
+                    <p style="font-size: 130%"> &nbsp&nbsp&nbsp&nbsp  Initial capital of KRW 10 million</p>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2021.07">
+                    <h1>2021.07</h1>
+                    <h3>- Execution of the Initial Startup Package project</h3>
+                    <p style="font-size: 130%">&nbsp&nbsp&nbsp&nbsp Government grant of KRW 140 million</p>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2021.09">
+                    <h1>2021.09</h1>
+                    <h3>- Investment attraction from Yonsei University's Technology Holding Company</h3>
+                    <p style="font-size: 130%">&nbsp&nbsp&nbsp&nbsp Investment of KRW 200 million</p>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2021.11">
+                    <h1>2021.11</h1>
+                    <h3>- Participation in the TIPS program </h3>
+                    <p style="font-size: 130%">&nbsp&nbsp&nbsp&nbsp Government grant of KRW 500 million</p>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2022.05">
+                    <h1>2022.05</h1>
+                    <h3>- 2021 Final Review and Performance Evaluation of the Initial Startup Package, selected as the Best Enterprise</h3>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2023.03">
+                    <h1>2023.03</h1>
+                    <h3>- Former Samsung Electronics Wireless Business Division Vice President and Head of Service Business Division joined the company</h3>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2023.05">
+                    <h1>2023.05</h1>
+                    <h3>- Selected for the TIPS program's business startup commercialization </h3>
+                    <p style="font-size: 130%">&nbsp&nbsp&nbsp&nbsp Government grant of KRW 95 million</p>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2023.05">
+                    <h1>2023.05</h1>
+                    <h3>- Establishment of a corporate-affiliated research institute</h3>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2023.07">
+                    <h1>2023.07</h1>
+                    <h3>- Achieved a 43% improvement in image quality compared to the data rate of standard codecs (HEVC, H.264)</h3>
+                </div>
+                <br>
+                <div class="timeline-item" data-date="2023.11">
+                    <h1>2023.11</h1>
+                    <h3>- The company name has changed from AIonFlow to NeonCue</h3>
+                </div>
+
+    </div>
+                <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+                <script src="lib/jquery/jquery.min.js"></script>
+                <script src="lib/jquery/jquery-migrate.min.js"></script>
+                <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="lib/easing/easing.min.js"></script>
+                <script src="lib/waypoints/waypoints.min.js"></script>
+                <script src="lib/counterup/counterup.min.js"></script>
+                <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
+                Copyright &copy; 2023 NeonCue . All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+</body>
+</html>
