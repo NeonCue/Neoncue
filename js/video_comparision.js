@@ -68,7 +68,7 @@ function playVids(videoId, text) {
             mergeContext.font = "80px Arial";
             mergeContext.fillStyle = "#FFFFFF";
             mergeContext.fillText("HEVC", currX - 285, arrowPosY);
-            mergeContext.fillText("HEVC + AIonFlow", currX + 70, arrowPosY)
+            mergeContext.fillText("HEVC + NeonCue", currX + 70, arrowPosY)
         }
         requestAnimationFrame(drawLoop);
     }
